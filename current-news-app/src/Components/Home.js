@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
-            <Link to='/'>Home</Link>
-            
-        </div>
-    );
+			<div>
+				<Link to='/'><img src='..' alt="" /></Link>
+			</div>
+		);
 };
 
 export default Home;

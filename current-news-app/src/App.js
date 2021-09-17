@@ -10,11 +10,8 @@ import RandomPictue from './Components/RandomPictue';
 function App() {
   return (
     <div className="App">
-     {/* <NavBars /> */}
-     {/* <RandomPictue /> */}
-     {/* <About /> */}
-     {/* <Home /> */}
-     <Articles />
+     <NavBars />
+
     </div>
   );
 }
