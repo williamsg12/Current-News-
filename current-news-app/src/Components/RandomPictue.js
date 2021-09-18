@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
 import { useState } from 'react';
+import axios from 'axios';
 
 const RandomPictue = () => {
         const [picture,setPicture]=useState('')
 
         useEffect(() => {
            
-           let url = `https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`;
-            fetch(url)
-            .then(res=>res.json())
-            .then(res=> setPicture(res))
+           axios(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_KEY}`)
+            .then(res=> setPicture(res.data))
             .catch((err)=>console.log(err))
 
         }, [])

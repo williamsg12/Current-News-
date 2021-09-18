@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import axios from 'axios';
 import { Container } from 'react-bootstrap';
-const cors = require('cors');
+import Fade from 'react-reveal'
 
 const Articles = () => {
 	const [articles, setArticles] = useState([]);
@@ -22,6 +22,8 @@ const Articles = () => {
 				{articles.map((items) => {
 					return (
 						<div>
+                            <Fade>
+
 							<div key={items.id}>
 								<h1>x{items.title}</h1>
 							</div>
@@ -39,6 +41,7 @@ const Articles = () => {
 								<p>{items.category}</p>
 								<p>{items.published}</p>
 							</div>
+                            </Fade>
 						</div>
 					);
 				})}

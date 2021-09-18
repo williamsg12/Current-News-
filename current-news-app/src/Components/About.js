@@ -1,17 +1,23 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import {Bounce} from 'react-reveal';
 
 const About = () => {
-    return (
-        <div>
-            <Container>
-            <h1>About</h1>
+	return (
+		<div>
+			<Container>
+				<Bounce>
+					<h1>About</h1>
+				</Bounce>
+                <Bounce>
 
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laboriosam vero assumenda error necessitatibus quo quos hic ullam, reiciendis qui libero deserunt nesciunt fugit laudantium eum, illo cumque beatae explicabo!</p>
-            </Container>
-        </div>
-    );
+				<p>
+					This is my project to showcase News and to provide some level of entertainment.The Daily picture button is to provide you with a picture that day related to astronomy . The categories  button will allow you to find specific articles related to your chosen category.
+				</p>
+                </Bounce>
+			</Container>
+		</div>
+	);
 };
 
 export default About;
