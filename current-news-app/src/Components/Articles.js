@@ -22,7 +22,7 @@ const Articles = () => {
 				{articles.map((items) => {
 					return (
 						<div>
-                            <Fade>
+                            <Fade right cascade>
 
 							<div key={items.id}>
 								<h1>x{items.title}</h1>

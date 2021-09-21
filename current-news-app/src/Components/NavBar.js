@@ -20,9 +20,6 @@ function NavBars() {
 						<NavLink href='/picture'>
 							<h2>Daily picture</h2>
 						</NavLink>
-						<NavLink href='/categories'>
-							<h2>Categories</h2>
-						</NavLink>
 						<NavLink href='/articles'>
 							<h2>Articles</h2>
 						</NavLink>

@@ -2,7 +2,8 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import About from './Components/About';
 import Articles from './Components/Articles';
-import Music from './Components/Music';
+// import Home from './Components/Home';
+import Home from './Components/Home';
 import NavBars from './Components/NavBar';
 import Quote from './Components/Quote';
 import RandomPictue from './Components/RandomPictue';
@@ -13,8 +14,8 @@ function App() {
   return (
 		<div className='App'>
 			<NavBars />
-			<Music />
 
+			<Route exact path='/' component={Home} />
 			<Route path='/about' component={About} />
 			<Route path='/picture' component={RandomPictue} />
 			<Route path='/articles' component={Articles} />
