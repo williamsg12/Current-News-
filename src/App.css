@@ -1,8 +1,14 @@
-audio{
 
-  display:none;
-}
 
 navbar{
   background-color: gray;
+}
+
+
+.coin-image{
+  max-width: 15px;
+}
+
+.coin-list{
+  columns: 3;
 }

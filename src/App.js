@@ -8,6 +8,7 @@ import NavBars from './Components/NavBar';
 import Quote from './Components/Quote';
 import RandomPictue from './Components/RandomPictue';
 import Stock from './Components/Stock';
+import Particles from 'react-particles-js';
 
 
 function App() {
@@ -15,12 +16,15 @@ function App() {
 		<div className='App'>
 			<NavBars />
 
+		
 			<Route exact path='/' component={Home} />
 			<Route path='/about' component={About} />
 			<Route path='/picture' component={RandomPictue} />
 			<Route path='/articles' component={Articles} />
 			<Route path='/quote' component={Quote} />
 			<Route path='/stock' component={Stock} />
+			
+			
 		</div>
 	);
 }

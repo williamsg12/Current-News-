@@ -1,18 +1,16 @@
 import React from 'react';
 import { Nav, NavLink, NavDropdown, Navbar } from 'react-bootstrap';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 
 function NavBars() {
 	return (
 		<div>
-			<Navbar bg='dark' variant='dark'>
+			<Navbar bg='dark' variant='dark' navbar-expand='lg'>
 				<NavLink href='/'>
 					<h2>Home</h2>
 				</NavLink>
-				<Navbar.Toggle />
 
-				<Navbar.Collapse title='Dropdown'>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-
+				<NavbarCollapse>
 					<Nav>
 						<NavLink href='/about'>
 							<h2>About</h2>
@@ -30,7 +28,7 @@ function NavBars() {
 							<h2>Quote</h2>
 						</NavLink>
 					</Nav>
-				</Navbar.Collapse>
+				</NavbarCollapse>
 			</Navbar>
 		</div>
 	);

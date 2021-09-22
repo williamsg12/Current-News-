@@ -3,25 +3,43 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Container } from 'react-bootstrap';
+import {Fade} from 'react-reveal'
 
 const Stock = () => {
     const [coins,setCoins]=useState([])
         useEffect(() => {
-            axios(`https://api.coinpaprika.com/v1/coins`)
-            .then(res=>setCoins(res.data))
-            .catch(err=>console.log(err))
+            axios(
+							`https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_STOCK_KEY}&ids=BTC,ETH,XRP,ADA,USDT,BNB&interval=1d,30d&convert=EUR&per-page=100&page=1`
+						)
+							.then((res) => setCoins(res.data))
+							.catch((err) => console.log(err));
         }, [])
         console.log(coins)
     return (
+
         <div>
-                {coins.map(coin=>{
-                   return <Container>
-                    <ul>
-                        <li>{coin.name}</li>
-                        <li>{coin.symbol}</li>
-                        <li>{coin.rank}</li>
-                    </ul>
-                    </Container>
+                {coins.filter(()=>5).map(coin=>{
+                   return (             
+											<Container>
+                                                <Fade bottom cascade>
+												<ol
+                                                 className='coin-list'>
+													<h1>{coin.name}</h1>
+													<li>Symbol:{coin.symbol}</li>
+													<li>Rank:{coin.rank}</li>
+													<li>Price:{coin.price}</li>
+													<li>
+														LOGO:{' '}
+														<img
+															src={coin.logo_url}
+															alt=''
+															className='coin-image'
+														/>
+													</li>
+												</ol>
+                                                    </Fade>
+											</Container>
+										);
                 })}
         </div>
     );

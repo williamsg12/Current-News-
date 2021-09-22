@@ -15,7 +15,6 @@ const Articles = () => {
 			.then((res) => setArticles(res.data.news))
 			.catch((err) => console.log(err));
 	}, []);
-	 console.log(articles);
 	return (
 		<div>
 			<Container>

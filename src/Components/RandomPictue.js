@@ -14,9 +14,6 @@ const RandomPictue = () => {
 
         }, [])
 
-   
-        console.log(picture)
-
     return (
 			<div>
                 <Fade top >
