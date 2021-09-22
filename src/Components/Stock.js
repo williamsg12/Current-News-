@@ -18,7 +18,7 @@ const Stock = () => {
     return (
 
         <div>
-                {coins.filter(()=>5).map(coin=>{
+                {coins.map(coin=>{
                    return (             
 											<Container>
                                                 <Fade bottom cascade>
