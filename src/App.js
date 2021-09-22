@@ -2,20 +2,19 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import About from './Components/About';
 import Articles from './Components/Articles';
-// import Home from './Components/Home';
 import Home from './Components/Home';
 import NavBars from './Components/NavBar';
 import Quote from './Components/Quote';
 import RandomPictue from './Components/RandomPictue';
 import Stock from './Components/Stock';
-import Particles from 'react-particles-js';
+import ParticleBackground from './Components/ParticleBackground';
 
 
 function App() {
   return (
 		<div className='App'>
 			<NavBars />
-
+		
 		
 			<Route exact path='/' component={Home} />
 			<Route path='/about' component={About} />
@@ -23,7 +22,7 @@ function App() {
 			<Route path='/articles' component={Articles} />
 			<Route path='/quote' component={Quote} />
 			<Route path='/stock' component={Stock} />
-			
+			<ParticleBackground />
 			
 		</div>
 	);
