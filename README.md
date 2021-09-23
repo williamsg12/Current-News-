@@ -1,10 +1,10 @@
-/////////////////// #*Description*#   \\\\\\\\\\\\\\\\\\\\\
+/////////////////// #Description#   \\\\\\\\\\\\\\\\\\\\\
 --This project is used to see the current news all over the world . It is also used fo entertainment purposes.
 
-//////////////////  #*Technologies Used*# \\\\\\\\\\\\\\\\\\\\\\\
+//////////////////  #Technologies Used# \\\\\\\\\\\\\\\\\\\\\\\
  --Html,Css,Reactjs,javascript
 
-////////////////// #*Dependecies*# \\\\\\\\\\\\\\\\\\\
+////////////////// #Dependecies# \\\\\\\\\\\\\\\\\\\
 
  "@testing-library/jest-dom": "^5.14.1",<br />
     "@testing-library/react": "^11.2.7",<br />
