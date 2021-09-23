@@ -24,16 +24,16 @@ const Articles = () => {
                             <Fade right cascade>
 
 							<div key={items.id}>
-								<h1>x{items.title}</h1>
+								<h1>{items.title}</h1>
 							</div>
 							<div>
 								<p>{items.description}</p>
 							</div>
 							<div>
-								<a href={items.url}>Read More</a>
+								<a href={items.url} className="read-more">Read More</a>
 							</div>
 							<div>
-								<img src={items.image} alt='' />
+								<img src={items.image} alt=''  className='article-picture'/>
 							</div>
 							<div>
 								<p>{items.author}</p>

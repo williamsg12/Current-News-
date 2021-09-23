@@ -18,7 +18,7 @@ const RandomPictue = () => {
 			<div>
                 <Fade top >
 				<h1>{picture.title}</h1>
-				<img src={picture.url} alt='' />
+				<img src={picture.url} alt=''  className='daily-picture'/>
 
 				<h2>Author:{picture.copyright}</h2>
 				<p>{picture.date}</p>

@@ -9,3 +9,12 @@
 .coin-list{
   columns: 3;
 }
+.daily-picture{
+  max-width: 400px;
+  max-height: 500px;
+}
+
+.article-picture{
+  max-width: 600px;
+  max-height: 300px;
+}
