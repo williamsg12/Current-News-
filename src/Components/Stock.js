@@ -8,10 +8,10 @@ import {Fade} from 'react-reveal'
 const Stock = () => {
     const [coins,setCoins]=useState([])
         useEffect(() => {
-            axios(`https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_STOCK_API_KEY}&ids=BTC,ETH,XRP,ADA,USDT,BNB&interval=1d`,{
-	headers: {
-	  'Access-Control-Allow-Origin': '*',
-	})
+            axios(
+							`https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_STOCK_API_KEY}&ids=BTC,ETH,XRP,ADA,USDT,BNB&interval=1d`,
+							{ crossdomain: true }
+						)
 							.then((res) => setCoins(res.data))
 							.catch((err) => console.log(err));
         }, [])
