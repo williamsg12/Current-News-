@@ -1,10 +1,10 @@
-#/////////////////// Description   \\\\\\\\\\\\\\\\\\\\\
+# /////////////////// Description   \\\\\\\\\\\\\\\\\\\\\
 --This project is used to see the current news all over the world . It is also used fo entertainment purposes.
 
-#//////////////////  #Technologies Used \\\\\\\\\\\\\\\\\\\\\\\
+# //////////////////  #Technologies Used \\\\\\\\\\\\\\\\\\\\\\\
  --Html,Css,Reactjs,javascript
 
-#////////////////// Dependecies \\\\\\\\\\\\\\\\\\\
+#  ////////////////// Dependecies \\\\\\\\\\\\\\\\\\\
 
  "@testing-library/jest-dom": "^5.14.1",<br />
     "@testing-library/react": "^11.2.7",<br />
@@ -23,11 +23,11 @@
     "tsparticles": "^1.35.1",<br />
     "web-vitals": "^1.1.2"<br />
 
-#////////////////////// How to use/install \\\\\\\\\\\\\\\\\\\
+#  ////////////////////// How to use/install \\\\\\\\\\\\\\\\\\\
 
 --To run application you can either go to https://curret-news-app5.herokuapp.com/  or there is the option of forking and cloning the repository and running a test server to see the application
 
 
-#///////////////////// How to contribute \\\\\\\\\\\\\\\\\\\\\\\\
+# ///////////////////// How to contribute \\\\\\\\\\\\\\\\\\\\\\\\
 
 --To contrubute you can always send an issue ticket if there is a bug or something that needs to be updated.
