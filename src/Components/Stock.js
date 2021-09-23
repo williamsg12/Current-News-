@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -8,7 +8,7 @@ import {Fade} from 'react-reveal'
 const Stock = () => {
     const [coins,setCoins]=useState([])
         useEffect(() => {
-            axios(`https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_STOCK_API_KEY}&ids=BTC,ETH,XRP,ADA,USDT,BNB&interval=1d`)
+            fetch(`https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_STOCK_API_KEY}&ids=BTC,ETH,XRP,ADA,USDT,BNB&interval=1d`)
 							.then((res) => setCoins(res.data))
 							.catch((err) => console.log(err));
         }, [])

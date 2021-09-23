@@ -8,7 +8,7 @@ const Home = () => {
         <div>      
              <h1>
             <Fade left cascade>
-                 Hello and Welcome.
+                 Hello and Welcome. Nice to see you !!!!!
             </Fade>
              </h1>
         </div>
