@@ -21,9 +21,6 @@ function NavBars() {
 						<NavLink href='/articles'>
 							<h2>Articles</h2>
 						</NavLink>
-						<NavLink href='/stock'>
-							<h2>Stock</h2>
-						</NavLink>
 						<NavLink href='/quote'>
 							<h2>Quote</h2>
 						</NavLink>
