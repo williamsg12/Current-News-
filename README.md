@@ -1,5 +1,6 @@
 ## /////////////////// *Description*   \\\\\\\\\\\\\\\\\\\\\
 >This project is used to see the current news all over the world . It is also used fo entertainment purposes.
+![project 2 picture](https://user-images.githubusercontent.com/88164567/134519303-8a305506-b38a-45c4-b928-c26a2dca545e.png)
 
 ## //////////////////  *Technologies Used* \\\\\\\\\\\\\\\\\\\\\\\
  >Html,Css,Reactjs,javascript
