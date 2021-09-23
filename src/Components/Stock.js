@@ -12,7 +12,7 @@ const Stock = () => {
 							.then((res) => setCoins(res.data))
 							.catch((err) => console.log(err));
         }, [])
-        console.log(coins)
+
     return (
 
         <div>
