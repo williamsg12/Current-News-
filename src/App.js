@@ -6,7 +6,6 @@ import Home from './Components/Home';
 import NavBars from './Components/NavBar';
 import Quote from './Components/Quote';
 import RandomPictue from './Components/RandomPictue';
-import Stock from './Components/Stock';
 import ParticleBackground from './Components/ParticleBackground';
 
 
@@ -21,7 +20,6 @@ function App() {
 			<Route path='/picture' component={RandomPictue} />
 			<Route path='/articles' component={Articles} />
 			<Route path='/quote' component={Quote} />
-			<Route path='/stock' component={Stock} />
 			<ParticleBackground />
 			
 		</div>
